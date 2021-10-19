@@ -20,3 +20,6 @@ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v ${HOME}:/root -e
 cm.exe selenoid start --vnc
 
 cm.exe selenoid-ui start
+
+
+appium -a 127.0.0.1 -p 4723 --allow-insecure chromedriver_autodownload
